@@ -75,7 +75,9 @@ const StudentList = () => {
       <ul className="space-y-4">
         {students.map((student) => (
           <li key={student._id} className="border p-2 flex justify-between items-center">
-            <div><p><strong>Email:</strong> {student.email}</p>
+            <div>
+              <p><strong>Nome:</strong> {student.name}</p>
+              <p><strong>Email:</strong> {student.email}</p>
               <p><strong>Telefone:</strong> {student.phone}</p>
               <p><strong>Status:</strong> {student.status}</p>
               <p><strong>Pagamento:</strong> {new Date(student.paymentDue).toLocaleDateString()}</p>
