@@ -16,17 +16,15 @@ const StudentForm = () => {
 
   const handleSubmit = async (e) => {
   e.preventDefault();
-
-  // Garantir que paymentDue seja uma data válida antes de enviar
-  const formattedPaymentDue = new Date(formData.paymentDue).toISOString(); // Formato ISO
+  const formattedPaymentDue = new Date(formData.paymentDue).toISOString();
 
   try {
     const response = await axios.post('http://localhost:5000/api/students', {
       ...formData,
-      paymentDue: formattedPaymentDue, // Usando a data formatada
+      paymentDue: formattedPaymentDue,
     });
+    console.log('Resposta do backend:', response.data); // Log da resposta do backend
     alert('Aluno cadastrado com sucesso!');
-    console.log(response.data);
     setFormData({
       name: '',
       email: '',
@@ -35,7 +33,7 @@ const StudentForm = () => {
       paymentDue: '',
     });
   } catch (error) {
-    console.error('Erro ao cadastrar aluno:', error.message);
+    console.error('Erro ao cadastrar aluno:', error.response ? error.response.data : error.message); // Exibe o erro completo
     alert('Erro ao cadastrar aluno.');
   }
 };
