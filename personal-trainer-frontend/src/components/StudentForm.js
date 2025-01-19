@@ -19,7 +19,7 @@ const StudentForm = () => {
   const formattedPaymentDue = new Date(formData.paymentDue).toISOString();
 
   try {
-    const response = await axios.post('http://localhost:5000/api/students', {
+    const response = await axios.post('http://localhost:5000/students', {
       ...formData,
       paymentDue: formattedPaymentDue,
     });

@@ -7,7 +7,7 @@ const StudentList = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/students');
+        const response = await axios.get('http://localhost:5000/students');
         setStudents(response.data);
       } catch (error) {
         console.error('Erro ao buscar alunos:', error.message);
