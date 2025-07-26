@@ -55,7 +55,7 @@ const StudentList = () => {
       try {
         await axios.delete(`http://localhost:5000/students/${id}`);
         alert('Aluno deletado com sucesso!');
-        fetchStudents(); // Atualiza a lista de alunos
+        fetchStudents();
       } catch (error) {
         console.error('Erro ao deletar aluno:', error.message);
         alert('Erro ao deletar aluno.');
