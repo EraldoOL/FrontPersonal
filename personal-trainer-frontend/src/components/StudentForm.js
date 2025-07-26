@@ -33,7 +33,7 @@ const StudentForm = () => {
       paymentDue: '',
     });
   } catch (error) {
-    console.error('Erro ao cadastrar aluno:', error.response ? error.response.data : error.message); // Exibe o erro completo
+    console.error('Erro ao cadastrar aluno:', error.response ? error.response.data : error.message);
     alert('Erro ao cadastrar aluno.');
   }
 };
