@@ -50,7 +50,6 @@ const StudentList = () => {
     }
   };
 
-  // Função para deletar um aluno
   const deleteStudent = async (id) => {
     if (window.confirm('Tem certeza que deseja deletar este aluno?')) {
       try {
