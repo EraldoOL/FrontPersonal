@@ -18,6 +18,7 @@ O FrontPersonal foi desenvolvido para fornecer uma experiência de usuário flui
 ## Tecnologias Utilizadas
 
 - **JavaScript(Ts)**
+- **Axios**
 - **HTML5**
 - **CSS3**
 - **React**
