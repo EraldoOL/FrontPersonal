@@ -17,9 +17,11 @@ O FrontPersonal foi desenvolvido para fornecer uma experiência de usuário flui
 
 ## Tecnologias Utilizadas
 
-- **JavaScript**: Linguagem principal para lógica de interface e integração com APIs (maior parte do código).
-- **HTML5**: Estruturação dos componentes e páginas.
-- **CSS3**: Estilização visual, garantindo responsividade e personalização.
+- **JavaScript(Ts)**
+- **HTML5**
+- **CSS3**
+- **React**
+- **Tailwind**
 
 ## Estrutura e Organização
 
