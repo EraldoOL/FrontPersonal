@@ -23,7 +23,7 @@ const StudentForm = () => {
       ...formData,
       paymentDue: formattedPaymentDue,
     });
-    console.log('Resposta do backend:', response.data); // Log da resposta do backend
+    console.log('Resposta do backend:', response.data);
     alert('Aluno cadastrado com sucesso!');
     setFormData({
       name: '',
